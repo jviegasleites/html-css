@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Veritical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;/*ajusta o tamanho para 100% da caixa*/
+
+            position: relative;
+            height: 96vh;/*para tirar a barra de rolagemda veew port*/
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size:100% 100% ;
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;/*centraliza na metade*/
+            top: 50%;/*centraliza na metade*/
+
+            transform: translate(-50%, -50%);/*altera a posição da caixa*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
