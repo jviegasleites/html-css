@@ -75,21 +75,26 @@ section.normal > p {
 }
 
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(51, 51, 51);
     color: white;
     font-family: var(--fonte3);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;/* para deixar menor a imagem*/
+    background-attachment: fixed;/* para fixar a imagem*/
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px;
     font-family: var(--fonte3);
 }
 
 section#img01{
     background-image: url('../imagens/background01.jpg');
     background-position: right center;
+ 
 }
 
 section#img02{
