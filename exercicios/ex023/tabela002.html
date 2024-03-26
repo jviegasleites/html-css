@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;/*para deixar a linha impar branco*/
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;/*para deixar a linha par cinza*/
+        }
+
+        td.num{
+            text-align: right;
+            st
+        }
+
+    </style>
 </head>
 <body>
     
@@ -11,6 +52,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -20,17 +62,56 @@
     -->
 
     <table>
+        <caption>Os seis Estados Mais populosos do Brasil </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 967</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+
+
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td class="num"><strong>122 037 053</strong></td>
+            </tr>
+        </tfoot>
+
     </table>
 
-    <tbody>
-        <tr>
-            <td>São Paulo</td>
-            
-        </tr>
-    </tbody>
+    
 </body>
 </html>
